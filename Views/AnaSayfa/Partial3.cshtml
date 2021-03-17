@@ -1,0 +1,48 @@
+﻿@using SeyahatSitesi.Models.Sınıflar
+@model List<Blog>
+@{
+    Layout = null;
+}
+<div class="padding1">
+    <h4>En Beğendiğimiz Yerler</h4>
+
+    <div class="box-left">
+
+        @foreach (var en in Model)
+        {
+            if (en.ID <= 4)
+            {
+
+                <div class="bot-img">
+                    <a href="/Blog/BlogDetay/@en.ID"> <img src="@en.BlogFoto" alt="" style="width:120px; height:65px;" /> </a>
+                </div>
+                <div class="bot-desc">
+                    <p>@en.Aciklama.Substring(0, 80)... </p>
+                </div>
+                <div class="clear"></div>
+            }
+        }
+    </div>
+
+    @foreach (var en2 in Model)
+    {
+        if (en2.ID >= 7 && en2.ID <= 9)
+        {
+            <div class="box1-left">
+                <div class="bot-img">
+                    <a href="/Blog/BlogDetay/@en2.ID"><img src="@en2.BlogFoto" style="width:120px; height:65px;" /></a>
+                </div>
+                <div class="bot-desc1">
+                    <p>@en2.Aciklama.Substring(0, 80)... </p>
+                </div>
+                
+                <div class="clear"></div>
+                </div>
+        }
+    }
+
+            </div>
+
+
+
+

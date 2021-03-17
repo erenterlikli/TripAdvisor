@@ -1,0 +1,33 @@
+﻿@using SeyahatSitesi.Models.Sınıflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "HakkimizdaPaneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkımızda Paneli</h2>
+
+<br />
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Açıklama</th>
+        <th>Foto Url</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var hak in Model)
+    {
+    <tr>
+        <td>@hak.ID</td>
+        <td>@hak.Aciklama</td>
+        <td>@hak.FotoUrl</td>
+        <td><a href="/Admin/HakkimizdaDetay/@hak.ID" class="btn btn-warning">Detaylar</a></td>
+    </tr>
+    }
+
+</table>
+
+
+

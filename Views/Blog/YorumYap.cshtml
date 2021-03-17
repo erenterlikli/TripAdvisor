@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="content-form">
+        <h3>Bu İçeriğe Yorum Yap</h3>
+       
+        <form method="post">
+            <input type="hidden" placeholder="Blog ID" name="BlogId" value="@ViewBag.deger" readonly="readonly" required  />
+            <input type="text" placeholder="Adı" name="KullaniciAdi" required />
+            <input type="text" placeholder="Mail" name="Mail" required />
+            <textarea placeholder="Mesaj" name="YorumMesaji"></textarea>
+            <input type="submit" value="GÖNDER" />
+        </form>
+    </div>

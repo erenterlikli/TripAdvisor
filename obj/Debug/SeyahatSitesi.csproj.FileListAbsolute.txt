@@ -48,6 +48,8 @@ C:\Users\Eren\source\repos\SeyahatSitesi\bin\roslyn\vbc.rsp
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\roslyn\VBCSCompiler.exe
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\Antlr3.Runtime.dll
+C:\Users\Eren\source\repos\SeyahatSitesi\bin\EntityFramework.dll
+C:\Users\Eren\source\repos\SeyahatSitesi\bin\EntityFramework.SqlServer.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\Newtonsoft.Json.dll
@@ -59,6 +61,8 @@ C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.WebPages.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.WebPages.Razor.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\WebGrease.dll
+C:\Users\Eren\source\repos\SeyahatSitesi\bin\EntityFramework.xml
+C:\Users\Eren\source\repos\SeyahatSitesi\bin\EntityFramework.SqlServer.xml
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.Helpers.xml
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.Mvc.xml
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\System.Web.Optimization.xml
@@ -76,8 +80,8 @@ C:\Users\Eren\source\repos\SeyahatSitesi\bin\tr\System.Web.Razor.resources.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\tr\System.Web.WebPages.resources.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\tr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\bin\tr\System.Web.WebPages.Razor.resources.dll
-C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.csprojAssemblyReference.cache
 C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.csproj.CoreCompileInputs.cache
 C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.csproj.CopyComplete
 C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.dll
 C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.pdb
+C:\Users\Eren\source\repos\SeyahatSitesi\obj\Debug\SeyahatSitesi.csprojAssemblyReference.cache

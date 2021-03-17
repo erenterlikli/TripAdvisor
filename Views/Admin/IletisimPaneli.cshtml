@@ -1,0 +1,57 @@
+﻿@using SeyahatSitesi.Models.Sınıflar
+@model List<Iletisim>
+@{
+    ViewBag.Title = "IletisimPaneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim Paneli</h2>
+
+<br />
+
+<table class="table table-bordered" id="tbl1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ad-Soyad</th>
+            <th>Mail</th>
+            <th>Konu</th>
+            <th>Mesaj</th>
+            <th>Detaylar</th>
+        </tr>
+    </thead>
+
+    @foreach (var msj in Model)
+    {
+        <tr>
+            <td>@msj.ID</td>
+            <td>@msj.AdSoyad</td>
+            <td>@msj.Mail</td>
+            <td>@msj.Konu</td>
+            <td>@msj.Mesaj</td>
+            <td><a href="/Admin/IletisimDetay/@msj.ID" class="btn btn-warning">Detaylar</a></td>
+        </tr>
+    }
+
+</table>
+
+<a href="/Admin/YeniBlog" class="btn btn-primary">Yeni Blog Ekle</a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+
+<script>
+    $('#tbl1').DataTable({
+        language: {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+
+        }
+    });
+
+
+</script>

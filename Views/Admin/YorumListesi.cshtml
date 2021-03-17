@@ -1,0 +1,59 @@
+﻿@using SeyahatSitesi.Models.Sınıflar
+@model List<Yorum>
+@{
+    ViewBag.Title = "YorumListesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yorum Listesi</h2>
+<br />
+<table class="table table-bordered" id="tbl1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Kullanıcı Adı</th>
+            <th>Mail</th>
+            <th>Yorum</th>
+            <th>Blog İsmi</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+
+    @foreach (var y in Model)
+    {
+        <tr>
+            <td>@y.ID</td>
+            <td>@y.KullaniciAdi</td>
+            <td>@y.Mail</td>
+            <td>@y.YorumMesaji</td>
+            <td>@y.Blog.Baslik</td>
+            <td><a href="/Admin/YorumSil/@y.ID" class="btn btn-danger" onclick="return confirm('Silmek istediğinize emin misiniz?')" )>Sil</a></td>
+            <td><a href="/Admin/YorumGetir/@y.ID" class="btn btn-warning">Güncelle</a></td>
+        </tr>
+    }
+
+
+
+</table>
+
+<a href="/Admin/YeniBlog" class="btn btn-primary">Yeni Blog Ekle</a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+
+<script>
+    $('#tbl1').DataTable({
+        language: {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+
+        }
+    });
+
+
+</script>

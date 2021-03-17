@@ -1,0 +1,22 @@
+﻿@model SeyahatSitesi.Models.Sınıflar.Hakkimizda
+@{
+    ViewBag.Title = "HakkimizdaDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkimizda Detay Sayfası</h2>
+<br />
+@using (Html.BeginForm("HakkimizdaGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama,10,1, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.FotoUrl)
+    @Html.TextBoxFor(x => x.FotoUrl, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Güncellemeyi Tamamla</button>
+}
